@@ -10,6 +10,7 @@ In this project you will build such a pipeline.
 
 - GitHub repository: [DurellMarshall/Project-Build-an-ML-Pipeline-Starter](https://github.com/DurellMarshall/Project-Build-an-ML-Pipeline-Starter)
 - W&B project: [nyc_airbnb](https://wandb.ai/durellmars-western-governors-university/nyc_airbnb)
+- W&B view-only report: [NYC Airbnb Pipeline](https://wandb.ai/durellmars-western-governors-university/nyc_airbnb/reports/NYC-Airbnb-Pipeline--VmlldzoxNjc2MjYyNQ?accessToken=dwzam4c8kbyfliek4s340gtxsiwx1rzkpx1gdsjvkvpt78m63k5i3jnl0tj3pjss)
 - Release tags: [1.0.0](https://github.com/DurellMarshall/Project-Build-an-ML-Pipeline-Starter/releases/tag/1.0.0), [1.0.1](https://github.com/DurellMarshall/Project-Build-an-ML-Pipeline-Starter/releases/tag/1.0.1)
 
 ## Validation summary
