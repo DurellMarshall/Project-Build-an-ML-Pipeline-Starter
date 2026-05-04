@@ -6,6 +6,33 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 
 In this project you will build such a pipeline.
 
+## Project links
+
+- GitHub repository: [DurellMarshall/Project-Build-an-ML-Pipeline-Starter](https://github.com/DurellMarshall/Project-Build-an-ML-Pipeline-Starter)
+- W&B project: [nyc_airbnb](https://wandb.ai/durellmars-western-governors-university/nyc_airbnb)
+- Release tags: [1.0.0](https://github.com/DurellMarshall/Project-Build-an-ML-Pipeline-Starter/releases/tag/1.0.0), [1.0.1](https://github.com/DurellMarshall/Project-Build-an-ML-Pipeline-Starter/releases/tag/1.0.1)
+
+## Validation summary
+
+The baseline pipeline was completed, run end to end, and tagged as release `1.0.0`.
+Hyperparameter tuning showed the best validation MAE with the default random forest settings
+in `config.yaml`: `max_depth=15` and `n_estimators=100`. The selected model artifact was
+promoted to `prod`, and `components/test_regression_model` verified it against the held-out
+test dataset.
+
+The `1.0.0` release was then run from GitHub with `sample2.csv`. This failed as expected in
+`test_proper_boundaries`, which found one listing outside the NYC latitude and longitude
+boundaries. Release `1.0.1` adds the required geolocation filter in
+`src/basic_cleaning/run.py`; rerunning `1.0.1` from GitHub with `sample2.csv` passed all six
+data checks and trained a new model with validation MAE `32.415`.
+
+## Future improvements
+
+Future releases could quarantine out-of-bounds listings instead of silently dropping them,
+add CI checks that run the data tests before tagging a release, compare random forests with
+gradient boosting models, expand text and geospatial feature engineering, and monitor data
+drift and prediction error over time in W&B.
+
 ## Table of contents
 
 - [Preliminary steps](#preliminary-steps)
