@@ -1,6 +1,6 @@
 name: components
 channels:
   - conda-forge
-  - defaults
 dependencies:
+  - libblas=*=*openblas
   - mlflow=3.3.2

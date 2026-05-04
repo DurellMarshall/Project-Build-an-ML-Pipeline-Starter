@@ -1,9 +1,9 @@
 name: eda
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.12
+  - libblas=*=*openblas
   - hydra-core=1.3.2
   - pandas=2.3.2
   - pip=24.3.1

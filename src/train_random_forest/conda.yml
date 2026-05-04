@@ -1,9 +1,9 @@
 name: train_random_forest
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.13.0
+  - libblas=*=*openblas
   - hydra-core=1.3.2
   - matplotlib=3.10.6
   - pandas=2.3.2

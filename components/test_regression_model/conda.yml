@@ -1,9 +1,9 @@
 name: test_regression_model
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.13.0
+  - libblas=*=*openblas
   - pip=24.3.1
   - requests=2.32.5
   - scikit-learn=1.7.2

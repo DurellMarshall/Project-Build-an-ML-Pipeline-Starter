@@ -1,9 +1,9 @@
 name: components
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.13
+  - libblas=*=*openblas
   - pyyaml
   - hydra-core=1.3.2
   - pip=24.3.1
